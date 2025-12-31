@@ -32,6 +32,54 @@
         </div>
     </header>
 
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a>
+            <span class="separator">&gt;</span>
+            <span aria-current="page" class="current">Events</span>
+        </div>
+    </nav>
+
+
+    <main class="container section-padding">
+        <header class="d-flex justify-between align-center mb-4">
+            <h1 class="text-2-5xl text-color">Upcoming Events</h1>
+            <!-- Search/Filter -->
+            <search class="d-flex gap-1">
+                <input type="search" id="eventSearch" placeholder="Search events..." class="form-input"
+                    style="width: auto;">
+                <select id="eventCategory" class="form-select" style="width: auto;">
+                    <option value="all">All Categories</option>
+                    <option value="Conference">Conference</option>
+                    <option value="Music">Music</option>
+                    <option value="Workshop">Workshop</option>
+                </select>
+            </search>
+        </header>
+
+        <div class="table-container">
+            <table class="event-table">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Category</th>
+                        <th>Cost</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="eventsTableBody">
+                    <!-- Events will be populated here via JavaScript -->
+                    <tr>
+                        <td colspan="6" class="p-4 text-center text-muted">Loading events...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
 
     <footer>
         <div class="container">
@@ -72,6 +120,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/registration.js"></script>
 
 </body>
 

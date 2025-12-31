@@ -50,7 +50,7 @@ body {
 }
 
 /* Header & Nav */
-header {
+body>header {
     background-color: var(--surface-color);
     box-shadow: var(--shadow-sm);
     position: sticky;
