@@ -39,6 +39,88 @@
         </div>
     </nav>
 
+    <main class="container section-padding">
+        <div class="max-w-800 mx-auto bg-white p-4 rounded-md shadow-md">
+            <h1 class="text-3xl mb-4 text-center text-color">Event Budget Calculator</h1>
+
+            <form id="budgetForm">
+
+                <fieldset class="mb-4" style="border: none; padding: 0; margin: 0;">
+                    <legend class="text-xl mb-2 text-primary border-b pb-2 w-100">Your Budget</legend>
+                    <div class="form-group">
+                        <label for="totalBudget" class="form-label">Total Planned Budget ($)</label>
+                        <input type="number" id="totalBudget" min="0" placeholder="e.g. 500" class="form-input">
+                    </div>
+                </fieldset>
+
+                <fieldset class="mb-4" style="border: none; padding: 0; margin: 0;">
+                    <legend class="text-xl mb-2 text-primary border-b pb-2 w-100">Event Expenses</legend>
+                    <div class="grid-cols-200">
+                        <div>
+                            <label for="ticketPrice" class="form-label">Ticket Price ($)</label>
+                            <input type="number" id="ticketPrice" min="0" value="0" class="form-input">
+                        </div>
+                        <div>
+                            <label for="attendees" class="form-label">Estimated Attendees</label>
+                            <input type="number" id="attendees" min="1" value="1" class="form-input">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="mb-4" style="border: none; padding: 0; margin: 0;">
+                    <legend class="text-xl mb-2 text-primary border-b pb-2 w-100">Travel & Accommodation</legend>
+                    <div class="grid-cols-200">
+                        <div>
+                            <label for="travelCost" class="form-label">Travel Cost ($)</label>
+                            <input type="number" id="travelCost" min="0" value="0" class="form-input">
+                        </div>
+                        <div>
+                            <label for="accommodationCost" class="form-label">Accommodation Cost ($)</label>
+                            <input type="number" id="accommodationCost" min="0" value="0" class="form-input">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="mb-4" style="border: none; padding: 0; margin: 0;">
+                    <legend class="text-xl mb-2 text-primary border-b pb-2 w-100">Additional Expenses</legend>
+                    <div class="grid-cols-200">
+                        <div>
+                            <label for="foodCost" class="form-label">Food & Beverage ($)</label>
+                            <input type="number" id="foodCost" min="0" value="0" class="form-input">
+                        </div>
+                        <div>
+                            <label for="miscCost" class="form-label">Miscellaneous ($)</label>
+                            <input type="number" id="miscCost" min="0" value="0" class="form-input">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button style="display: none;" type="button" id="calculateBtn"
+                    class="btn btn-primary w-100 mb-4">Calculate Remaining
+                    Budget</button>
+
+                <!-- Results Section -->
+                <output id="results" class="bg-slate-50 p-3 rounded-md"
+                    style="display: none; width: 100%; margin-top: 1.5rem;">
+                    <h3 class="mb-2 text-center text-xl">Budget Summary</h3>
+                    <div class="d-flex justify-between mb-1">
+                        <span>Your Budget:</span>
+                        <span id="displayTotalBudget" class="font-bold text-gray">$0.00</span>
+                    </div>
+                    <div class="d-flex justify-between mb-1">
+                        <span>Total Estimated Cost:</span>
+                        <span id="displayTotalExpenses" class="font-bold text-danger">$0.00</span>
+                    </div>
+                    <div class="border-b mb-2 mt-4"></div>
+                    <div class="d-flex justify-between text-xl">
+                        <span>Remaining Balance:</span>
+                        <span id="displayNetBalance" class="font-bold">$0.00</span>
+                    </div>
+                </output>
+
+            </form>
+        </div>
+    </main>
 
     <footer>
         <div class="container">
@@ -80,6 +162,7 @@
         </div>
     </footer>
 
+    <script src="scripts/calculator.js"></script>
 </body>
 
 </html>
