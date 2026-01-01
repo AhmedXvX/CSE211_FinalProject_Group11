@@ -32,6 +32,62 @@
         </div>
     </header>
 
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Discover & Plan Amazing Events</h1>
+                <p>Join thousands of people who use EventsX to find, register, and manage their events effortlessly.</p>
+                <div class="d-flex gap-1 justify-center">
+                    <a href="pages/events.html" class="btn btn-primary">Browse Events</a>
+                    <a href="pages/budget-calculator.html" class="btn btn-outline">Calculate Budget</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="d-flex gap-2 flex-wrap">
+
+                <!-- Event Listings (Left Column) -->
+                <section class="flex-2 min-w-300">
+                    <h2 class="mb-2 text-2xl">Upcoming Highlights</h2>
+
+                    <!-- Dynamic Event Cards for Index -->
+                    <div id="featuredEventsContainer" class="grid-stack">
+                        <!-- Events will be populated here via JavaScript -->
+                        <div class="text-center p-4">Loading upcoming events...</div>
+                    </div>
+
+                    <div class="mt-4 text-center">
+                        <a href="pages/events.html" class="font-bold text-primary" style="text-decoration: none;">View
+                            All Events &rarr;</a>
+                    </div>
+                </section>
+
+                <!-- Search/Filter (Right Column) -->
+                <aside class="flex-1 min-w-250">
+                    <div class="sticky-sidebar">
+                        <h3 class="mb-2">Find Events</h3>
+                        <form action="pages/events.html" method="get">
+                            <div class="mb-2">
+                                <label for="search" class="form-label">Search</label>
+                                <input type="search" id="search" name="search" placeholder="Event name..."
+                                    class="form-input">
+                            </div>
+                            <div class="mb-2">
+                                <label for="category" class="form-label">Category</label>
+                                <select id="category" name="category" class="form-select">
+                                    <option value="">All Categories</option>
+                                    <!-- Dynamic options will be inserted here -->
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Search</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div class="container">
@@ -73,6 +129,7 @@
         </div>
     </footer>
 
+    <script src="pages/scripts/events.js"></script>
 </body>
 
 </html>
