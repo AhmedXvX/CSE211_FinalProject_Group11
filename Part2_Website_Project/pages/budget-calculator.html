@@ -16,7 +16,7 @@
 
     <header>
         <div class="container">
-            <nav id="main-navigation" role="navigation">
+            <nav id="main-navigation">
                 <a href="../index.html" class="logo">EventsX</a>
                 <ul class="nav-links">
                     <li><a href="../index.html">Home</a></li>
@@ -100,23 +100,23 @@
                     Budget</button>
 
                 <!-- Results Section -->
-                <output id="results" class="bg-slate-50 p-3 rounded-md"
-                    style="display: none; width: 100%; margin-top: 1.5rem;">
+                <section id="results" class="bg-slate-50 p-3 rounded-md"
+                    style="display: none; width: 100%; margin-top: 1.5rem;" aria-live="polite">
                     <h3 class="mb-2 text-center text-xl">Budget Summary</h3>
                     <div class="d-flex justify-between mb-1">
                         <span>Your Budget:</span>
-                        <span id="displayTotalBudget" class="font-bold text-gray">$0.00</span>
+                        <output id="displayTotalBudget" class="font-bold text-gray">$0.00</output>
                     </div>
                     <div class="d-flex justify-between mb-1">
                         <span>Total Estimated Cost:</span>
-                        <span id="displayTotalExpenses" class="font-bold text-danger">$0.00</span>
+                        <output id="displayTotalExpenses" class="font-bold text-danger">$0.00</output>
                     </div>
                     <div class="border-b mb-2 mt-4"></div>
                     <div class="d-flex justify-between text-xl">
                         <span>Remaining Balance:</span>
-                        <span id="displayNetBalance" class="font-bold">$0.00</span>
+                        <output id="displayNetBalance" class="font-bold">$0.00</output>
                     </div>
-                </output>
+                </section>
 
             </form>
         </div>

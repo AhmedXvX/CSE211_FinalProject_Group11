@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 class BudgetCalculator {
     constructor() {
         this.calculateBtn = document.getElementById('calculateBtn');

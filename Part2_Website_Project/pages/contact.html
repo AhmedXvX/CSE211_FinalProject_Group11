@@ -18,7 +18,7 @@
 
     <header>
         <div class="container">
-            <nav id="main-navigation" role="navigation">
+            <nav id="main-navigation">
                 <a href="../index.html" class="logo">EventsX</a>
                 <ul class="nav-links">
                     <li><a href="../index.html">Home</a></li>
@@ -47,31 +47,32 @@
         <div class="grid-cols-300 max-w-1000 mx-auto">
 
             <!-- Contact Info -->
-            <address style="font-style: normal;">
+            <div>
                 <h2 class="text-2xl mb-2 text-color">Contact Information</h2>
-                <div class="mb-4">
-                    <h3 class="text-lg mb-1 text-color">Email</h3>
-                    <p><a href="mailto:info@gu.edu.eg" class="text-primary"
-                            style="text-decoration: none;">info@gu.edu.eg</a></p>
-                </div>
-                <div class="mb-4">
-                    <h3 class="text-lg mb-1 text-color">Hotline</h3>
-                    <p class="text-gray">+20 123 456 7890</p>
-                </div>
-                <div class="mb-4">
-                    <h3 class="text-lg mb-1 text-color">Social Media</h3>
-                    <nav>
+                <address style="font-style: normal;">
+                    <div class="mb-4">
+                        <strong class="d-block text-lg mb-1 text-color">Email</strong>
+                        <p><a href="mailto:info@gu.edu.eg" class="text-primary"
+                                style="text-decoration: none;">info@gu.edu.eg</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <strong class="d-block text-lg mb-1 text-color">Hotline</strong>
+                        <p class="text-gray">+20 123 456 7890</p>
+                    </div>
+                    <div class="mb-4">
+                        <strong class="d-block text-lg mb-1 text-color">Social Media</strong>
                         <ul class="d-flex gap-1" style="list-style: none; padding: 0;">
                             <li><a href="#" class="text-primary" style="text-decoration: none;">LinkedIn</a></li>
                             <li><a href="#" class="text-primary" style="text-decoration: none;">Facebook</a></li>
                             <li><a href="#" class="text-primary" style="text-decoration: none;">Twitter</a></li>
                         </ul>
-                    </nav>
-                </div>
-            </address>
+                    </div>
+                </address>
+            </div>
 
             <!-- Contact Form -->
             <section class="bg-white p-4 rounded-md shadow-md">
+                <h2 class="text-xl mb-4 text-primary">Send a Message</h2>
                 <form action="scripts/process_contact.php" method="POST" id="contactForm">
                     <div class="form-group">
                         <label for="name" class="form-label">Name</label>
@@ -89,19 +90,16 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                    <!-- PHP Form Processor Integration Placeholder -->
                 </form>
             </section>
         </div>
 
         <section class="mt-4" style="margin-top: 4rem;">
-            <!-- mt-4 is 2rem. Original was 4rem. I'll use inline style for bigger margin or add .mt-8? I'll use inline style="margin-top: 4rem;" or just .mt-4 works fine visually. I'll use inline to match user request of pixel perfection or simply respect the original 4rem. I'll leave inline style for major layout spacing if no utility exists. -->
             <h2 class="text-2xl mb-2 text-color text-center">Our Location</h2>
             <div class="map-container">
-                <!-- Placeholder for actual map -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14949.269287699075!2d32.40252662714761!3d29.431991308958356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1456ff7ff3ddef53%3A0xc068a57c93cba6dc!2z2KzYp9mF2LnYqSDYp9mE2KzZhNin2YTYqQ!5e1!3m2!1sar!2seg!4v1767392003302!5m2!1sar!2seg"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
