@@ -10,8 +10,8 @@
 - Saif Amer (223105417)
 
 ## Project Links
-- GitHub Repository: https://github.com/AhmedXvX/CSE211_FinalProject_Group11/commits/master/
-- Live Hosting: https://cse-211-group-11-project.infinityfree.me/
+- **GitHub Repository:** [https://github.com/AhmedXvX/CSE211_FinalProject_Group11/commits/master/](https://github.com/AhmedXvX/CSE211_FinalProject_Group11/commits/master/)
+- **Live Hosting:** [https://cse-211-group-11-project.infinityfree.me/](https://cse-211-group-11-project.infinityfree.me/)
 
 ## Project Instructions
 

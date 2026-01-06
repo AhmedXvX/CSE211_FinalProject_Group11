@@ -1,0 +1,5 @@
+PHP >= 7.4
+MySQL >= 5.7 or MariaDB
+Apache Web Server (or equivalent)
+Web Browser (Chrome, Firefox, Edge, Safari)
+Google Fonts (Inter) - Loaded via CDN
